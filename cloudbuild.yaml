@@ -9,7 +9,7 @@ teps:
     args: ["install", "-r", "requirements.txt", "--user"]
     id: "installation des dépendances"
 
-    # ! test
+    # ! test 
   - name: python
     # nom du programme en entrée pour cette étape de pipeline
     entrypoint: python
