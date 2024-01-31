@@ -23,7 +23,7 @@ steps:
       [
         "build",
         "-t",
-        "europe-west1-docker.pkg.dev/serfa-gcp/$REPO_NAME/flasksample:$SHORT_SHA",
+        "europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject/flasksample:$SHORT_SHA",
         "-f",
         "prod.Dockerfile",
         ".",
