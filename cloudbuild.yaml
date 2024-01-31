@@ -46,7 +46,7 @@ steps:
       - serfa-gcp-tp
       - "--platform=managed"
       - "--port=5000"
-      - "--image=europe-west1-docker.pkg.dev/serfa-gcp/$REPO_NAME/flasksample:$SHORT_SHA"
+      - "--image=europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject/flasksample:$SHORT_SHA"
       - "--region=europe-west1"
       - "--quiet"
     id: Deploy
