@@ -36,7 +36,7 @@ steps:
       - "europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject/flasksample:$SHORT_SHA"
     id: Push
     
-    # TODO deployer cette image en tant que service Cloud Run
+    # TODO deployer cette image en tant que service Cloud Run 
   # déploiement sur Google Cloud Run
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
     args:
