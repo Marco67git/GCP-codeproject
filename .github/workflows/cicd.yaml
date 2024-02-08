@@ -9,7 +9,7 @@ on:
 # les "jobs" sont les étapes de votre pipeline
 jobs:
 
-    # CONTINUOUS INTEGRATION
+    # CONTINUOUS INTEGRATION 
     # votre prémière étape, que vous pouvez nommer arbitrairement
     build-and-test:
         # on décrit le type de machine sur lequel on veut run une étape
