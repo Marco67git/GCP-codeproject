@@ -38,7 +38,7 @@ jobs:
             registry: europe-west1-docker.pkg.dev
             username: _json_key
             password: ${{ secrets.CLOUD_RUN_DEPLOYER_SA_KEY }}
-            - id: docker-push-tagged
+        - id: docker-push-tagged
           name: Tag Docker image and push to Google Artifact Registry
           uses: docker/build-push-action@v5
           with:
@@ -46,4 +46,5 @@ jobs:
             context: .
             push: true
             tags: |
-              europe-west1-docker.pkg.dev/europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject
+              europe-west1-docker.pkg.dev/europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject:latest
+              europe-west1-docker.pkg.dev/europe-west1-docker.pkg.dev/high-sunlight-412810/gcp-codeproject:${{ github.sha }}
